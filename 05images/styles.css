@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #BDDEF2;
+    
+}
+
+nav {
+    background-color: #333;
+    padding: 48px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+ul {
+    list-style-type: square;
+    padding: 2%;
+    margin: 2%;
+}
+
+nav ul li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    list-style-type: square;
+}
+/*container css*/
+.container {
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 100px;
+    background-color: white;
+    border-radius: 10%;   
+    border-width: 20px;
+    border-color: black;
+    border-style: solid;
+    margin: 3%
+}
+.containeroil{
+    display: flex;
+    flex-wrap: wrap; /* Allows the figures to wrap to the next line */
+    justify-content: space-between; /* Adds space between items */
+    
+    gap: 20px; /* Adds space between figure elements */
+    box-sizing: border-box; 
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 100px;
+    background-color: white;
+    border-radius: 10%;   
+    border-width: 20px;
+    border-color: black;
+    border-style: solid;
+    margin: 3%
+}
+dl {
+    color: pink;
+    font-size: 25px;
+    
+}
+
+footer {
+    
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    clear: both;
+    margin-top: 2em;
+    width: 100%;
+    bottom: 0;
+    
+}
+/*h1*/
+h1 {
+    color: #1C66A6;
+}
+h2 {
+    color: #1C66A6;
+}
+p {
+    color: #000000;
+}
+
+a:link{
+    color:#BDDEF2;
+    text-decoration: none !important;
+
+}
+figure {
+    display:flex;
+    flex-wrap: nowrap;
+    width: 20%;
+    height: auto;
+}
+a:hover{
+    color: lightblue;
+}
+
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+    float: right;
+    font-size: 0.9em;
+}
