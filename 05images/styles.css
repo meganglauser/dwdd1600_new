@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #BDDEF2;
-    
 }
 
 nav {
@@ -17,16 +16,10 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    list-style-type: none;
-}
-ul {
-    list-style-type: square;
-    padding: 2%;
-    margin: 2%;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
     list-style-type: none;
 }
 
@@ -34,84 +27,96 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    list-style-type: square;
 }
-/*container css*/
+
 .container {
     max-width: 80%;
     margin: 50px auto;
-    padding: 100px;
+    padding: 50px;
     background-color: white;
-    border-radius: 10%;   
-    border-width: 20px;
-    border-color: black;
-    border-style: solid;
-    margin: 3%
-}
-.containeroil{
-    display: flex;
-    flex-wrap: wrap; /* Allows the figures to wrap to the next line */
-    justify-content: space-between; /* Adds space between items */
-    
-    gap: 20px; /* Adds space between figure elements */
-    box-sizing: border-box; 
-    max-width: 100%;
-    margin: 50px auto;
-    padding: 100px;
-    background-color: white;
-    border-radius: 10%;   
-    border-width: 20px;
-    border-color: black;
-    border-style: solid;
-    margin: 3%
-}
-dl {
-    color: pink;
-    font-size: 25px;
-    
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
-footer {
-    
-    text-align: center;
+.containeroil {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    gap: 20px; 
+    max-width: 100%;
+    margin: 50px auto;
     padding: 20px;
-    background-color: #333;
-    color: white;
-    clear: both;
-    margin-top: 2em;
-    width: 100%;
-    bottom: 0;
-    
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
 }
-/*h1*/
+
+figure {
+    width: 100%;
+    max-width: 300px; /* Set a max width for each figure */
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+figure img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+    border-radius: 5px;
+}
+
+figure figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
 h1 {
     color: #1C66A6;
+    text-align: center;
 }
+
 h2 {
     color: #1C66A6;
 }
+
 p {
     color: #000000;
 }
 
-a:link{
-    color:#BDDEF2;
+a:link {
+    color: #BDDEF2;
     text-decoration: none !important;
+}
 
-}
-figure {
-    display:flex;
-    flex-wrap: nowrap;
-    width: 20%;
-    height: auto;
-}
-a:hover{
+a:hover {
     color: lightblue;
 }
-
-figure figcaption {
+header {
     text-align: center;
-    font-style: italic;
-    float: right;
-    font-size: 0.9em;
+    font-family: 'Times New Roman', serif;
+    
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+    /* Mobile adjustments */
+    .containeroil {
+        padding: 10px;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    figure {
+        max-width: 90%; 
+    }
 }
