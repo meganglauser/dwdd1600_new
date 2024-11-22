@@ -1,0 +1,261 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #BDDEF2;
+    position: relative; 
+}
+nav {
+    background-color: #333;
+    padding: 48px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    color: lightblue;
+    font-weight: bold;
+    border-bottom: 2px solid lightblue;
+}
+
+a:link {
+    color: #BDDEF2;
+    text-decoration: none !important;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.header-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 20px;
+    background-color: #BDDEF2;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header-content h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #1C66A6;
+}
+
+.header-content p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container, .containeroil {
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.containeroil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+
+figure {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figure figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+h1, h2 {
+    color: #1C66A6;
+    text-align: center;
+}
+
+p {
+    color: #000000;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, black, grey);
+    color: white;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.hero {
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.gallery-image {
+    transition: box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .containeroil {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+ul {
+    list-style-type: square; 
+    padding-left: 20px; 
+}
+
+ol {
+    list-style-type: upper-roman; 
+    padding-left: 20px; 
+}
+dl {
+    margin: 20px 0; 
+}
+
+
+dt {
+    font-weight: bold; 
+    color: #1C66A6;
+    margin-top: 10px; 
+}
+
+dd {
+    margin-left: 20px; 
+    color: #333; 
+    font-style: italic; 
+}
+fieldset {
+    border: 2px solid #007BFF; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+legend {
+    font-size: 1.2em; 
+    font-weight: bold; 
+    color: #007BFF; 
+    padding: 0 10px; 
+    border: 1px solid #007BFF; 
+    border-radius: 5px; 
+    background-color: #e7f3ff; 
+}
+input:valid {
+    border-color: #28a745;
+    background-color: #eaffea;
+}
+
+input:invalid {
+    border-color: #dc3545;
+    background-color: #ffe6e6;
+}
+
+input:required {
+    border-color: #ffc107;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"]:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
